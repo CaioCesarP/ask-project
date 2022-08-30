@@ -65,12 +65,14 @@ const HeaderLink = styled.li`
 const Header = () => {
   return (
     <HeaderContainer>
-      <HeaderLogo>
-        <HeaderlogoImageDiv>
-          <HeaderLogoImage src={logo} alt="Logo da marca ASK" />
-        </HeaderlogoImageDiv>
-        <HeaderLogoText>AŞK</HeaderLogoText>
-      </HeaderLogo>
+      <Link to="/">
+        <HeaderLogo>
+          <HeaderlogoImageDiv>
+            <HeaderLogoImage src={logo} alt="Logo da marca ASK" />
+          </HeaderlogoImageDiv>
+          <HeaderLogoText>AŞK</HeaderLogoText>
+        </HeaderLogo>
+      </Link>
       <HeaderNavigation>
         <HeaderList>
           <HeaderLink>
