@@ -3,7 +3,7 @@
   --black: #242424;
   --white: ffffffde;
   --primary: #646cff;
-  --primaryHover: #535bf2;
+  --primaryHover: #464eed;
   --secondary: #213547;
   --secondaryHover: #162431;
   --background: #1a1a1a;
@@ -38,9 +38,7 @@ a:hover {
 body {
   margin: 0;
   padding: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
+  max-width: 100vw;
   min-height: 100vh;
 }
 
