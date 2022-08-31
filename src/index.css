@@ -7,9 +7,6 @@
   --secondary: #213547;
   --secondaryHover: #162431;
   --background: #1a1a1a;
-}
-
-:root {
   font-family: var(--font);
   font-size: 16px;
   line-height: 24px;
@@ -35,11 +32,13 @@ a:hover {
   color: var(--primaryHover);
 }
 
-body {
+body, #root {
   margin: 0;
   padding: 0;
   max-width: 100vw;
   min-height: 100vh;
+  color: var(--white);
+  background-color: var(--black);
 }
 
 h1 {

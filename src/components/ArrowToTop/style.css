@@ -1,0 +1,58 @@
+.arrowToTop {
+  position: fixed;
+  z-index: 100;
+
+  width: 30px;
+  padding: 7px 3px;
+
+  background: var(--black);
+  border-radius: 60px;
+  box-shadow: 0px 0px 9px -5px #000000;
+
+  align-items: center;
+  justify-content: center;
+
+  bottom: 70px;
+  right: 20px;
+
+  cursor: pointer;
+}
+
+.arrowToTop:before,
+.arrowToTop:after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  right: 8px;
+  bottom: 8px;
+  border: 2px solid var(--white);
+  border-radius: 50%;
+  animation: pulse 2s linear infinite;
+}
+
+.arrowToTop:after {
+  animation-delay: 6s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(2);
+  }
+
+  25% {
+    transform: scale(1.8);
+  }
+
+  50% {
+    transform: scale(1.4);
+  }
+
+  75% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(0.7);
+  }
+}
