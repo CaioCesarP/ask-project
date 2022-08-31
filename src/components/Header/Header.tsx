@@ -13,7 +13,6 @@ const HeaderContainer = styled.section`
   min-height: 120px;
 
   background-color: var(--background);
-  color: var(--primary);
 `;
 
 const HeaderLogo = styled.section`
@@ -32,7 +31,7 @@ const HeaderlogoImageDiv = styled.div`
   height: fit-content;
   padding: 2px 12px;
   border-radius: 120px;
-  background-color: var(--secondary);
+  background-color: var(--white);
 `;
 
 const HeaderLogoImage = styled.img`
@@ -41,7 +40,7 @@ const HeaderLogoImage = styled.img`
 `;
 
 const HeaderLogoText = styled.h1`
-  color: var(--secondary);
+  color: var(--white);
 `;
 
 const HeaderNavigation = styled.nav`
@@ -57,7 +56,10 @@ const HeaderList = styled.ul`
 const HeaderLink = styled.li`
   list-style: none;
   font-size: 20px;
-  &:hover {
+  .header-Link {
+    color: var(--primary);
+  }
+  &:hover .header-Link {
     color: var(--primaryHover);
   }
 `;
@@ -76,13 +78,19 @@ const Header = () => {
       <HeaderNavigation>
         <HeaderList>
           <HeaderLink>
-            <Link to="/">Home</Link>
+            <Link className="header-Link" to="/">
+              Home
+            </Link>
           </HeaderLink>
           <HeaderLink>
-            <Link to="/topics">Topics</Link>
+            <Link className="header-Link" to="/topics">
+              Topics
+            </Link>
           </HeaderLink>
           <HeaderLink>
-            <Link to="/settings">Settings</Link>
+            <Link className="header-Link" to="/settings">
+              Settings
+            </Link>
           </HeaderLink>
         </HeaderList>
       </HeaderNavigation>

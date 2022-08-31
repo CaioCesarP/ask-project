@@ -12,7 +12,7 @@ const FooterContainer = styled.section`
   right: 0px;
 
   background-color: var(--background);
-  color: var(--secondary);
+  color: var(--white);
 `;
 
 const FooterCopyrigth = styled.p`
